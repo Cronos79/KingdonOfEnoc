@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "KoEClient (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "KoEClient (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

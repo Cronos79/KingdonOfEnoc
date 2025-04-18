@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoEClient", "KoEClient\KoEClient.csproj", "{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoEServer", "KoEServer\KoEServer.csproj", "{60AC4292-E5E1-4AAE-A0E5-05987B58E822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x64.ActiveCfg = Debug|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x64.Build.0 = Debug|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x64.Deploy.0 = Debug|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x86.ActiveCfg = Debug|x86
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x86.Build.0 = Debug|x86
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Debug|x86.Deploy.0 = Debug|x86
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|ARM64.Build.0 = Release|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|ARM64.Deploy.0 = Release|ARM64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x64.ActiveCfg = Release|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x64.Build.0 = Release|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x64.Deploy.0 = Release|x64
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x86.ActiveCfg = Release|x86
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x86.Build.0 = Release|x86
+		{4D0F1C31-3484-4C88-9646-A58F1EAA0E1E}.Release|x86.Deploy.0 = Release|x86
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|x64.Build.0 = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Debug|x86.Build.0 = Debug|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|ARM64.Build.0 = Release|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|x64.ActiveCfg = Release|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|x64.Build.0 = Release|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|x86.ActiveCfg = Release|Any CPU
+		{60AC4292-E5E1-4AAE-A0E5-05987B58E822}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D6929A4-E34F-4096-B3B5-6D67292C3DE0}
+	EndGlobalSection
+EndGlobal
