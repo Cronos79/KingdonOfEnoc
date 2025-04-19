@@ -8,21 +8,54 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="KoEClient">
-
-    <StackPanel Orientation="Vertical" Width="1920" Height="1080">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Height="965">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="1700">
-                <TextBlock x:Name="myTextBlock" Text="Kingdom of Enoc" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="Header" Grid.Row="0" Grid.ColumnSpan="2" Background="#0e0d0d" Margin="0,0,0,5">
+            <TextBlock Text="Kingdom of Enoc" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="MainGrid" Grid.Row="1" Grid.Column="0">
+            <ContentControl x:Name="ContentArea" HorizontalAlignment="Center"/>
+        </Grid>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Height="auto" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical" x:Name="LoginPanel">
+                <Border BorderBrush="LightGray" BorderThickness="3" CornerRadius="5" Margin="0,5,0,0">
+                    <Border Background="#0e0d0d" CornerRadius="5">
+                        <StackPanel Orientation="Vertical" Margin="10">
+                            <TextBlock Text="Login" FontSize="20" Margin="0,0,0,10"/>
+                            <TextBlock Text="Username:"/>
+                            <TextBox x:Name="UserNameTextBox" Width="200" Height="30" Margin="0,10,0,0"/>
+                            <TextBlock Text="Password:"/>
+                            <PasswordBox x:Name="PasswordBox" Width="200" Height="30" Margin="0,10,0,0"/>
+                            <Button x:Name="LoginButton" Click="LoginButton_Click" Margin="0,10,0,0">Login</Button>
+                        </StackPanel>
+                    </Border>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="3" CornerRadius="5" Margin="0,5,0,0">
+                    <Border Background="#0e0d0d" CornerRadius="5">
+                        <Button x:Name="SignupButton" Click="SignupButton_Click" Margin="0,10,0,0">Signup</Button>
+                    </Border>
+                </Border>
             </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="LoginButton" Click="LoginButton_Click" Margin="0,10,0,0">Login</Button>
-                    <Button x:Name="RegisterButton" Click="RegisterButton_Click" Margin="0,10,0,0">Register</Button>
-                </StackPanel>
-                <TextBox x:Name="UserNameTextBox" Width="200" Height="30" Margin="0,10,0,0"/>
-                <PasswordBox x:Name="PasswordBox" Width="200" Height="30" Margin="0,10,0,0"/>
-            </StackPanel>        
+            <StackPanel Orientation="Vertical" x:Name="RightInfoBar">
+                <Border BorderBrush="LightGray" BorderThickness="3" CornerRadius="5" Margin="0,5,0,0">
+                    <Border Background="#0e0d0d" CornerRadius="5">
+                        <StackPanel Orientation="Vertical" Margin="10">
+                            <Button x:Name="LogoutButton" Click="LoginButton_Click" >Logout</Button>
+                                <TextBlock Text="Info Bar" FontSize="20" Margin="0,0,0,10"/>
+                            <TextBlock Text="Some information here."/>
+                        </StackPanel>
+                    </Border>
+                </Border>
+            </StackPanel>
         </StackPanel>
-        <TextBlock x:Name="StatusTextBlock" Text="Status: Not Connected" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
-    </StackPanel>
+        <TextBlock x:Name="StatusTextBlock" Grid.Row="2" Grid.ColumnSpan="2" Text="Status bar" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Height="30"/>
+    </Grid>
 </Window>

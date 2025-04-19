@@ -6,8 +6,23 @@ namespace KoEClient.Client
 {
     public class GameLogin
     {
-        private readonly string _serverAddress;
-        private readonly int _serverPort;
+        private string _serverAddress;
+        public string ServerAddress
+        {
+            get { return _serverAddress; }
+            set { _serverAddress = value; }
+        }
+        private int _serverPort;
+        public int ServerPort
+        {
+            get { return _serverPort; }
+            set { _serverPort = value; }
+        }
+
+        public GameLogin()
+        {
+
+        }
 
         public GameLogin(string serverAddress, int serverPort)
         {
